@@ -4,8 +4,11 @@ Ejercicio en python con conexion a base de datos MySQL
 Integrantes:
 
 MORÁN NUGRA FABIOLA YOMIRA
+
 LÓPEZ ROMERO ALAN ARIEL
+
 IDROVO CAMPOVERDE JHON ALFREDO
+
 # Script Base de datos
 CREATE DATABASE IF NOT EXISTS plancuentas /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 USE plancuentas;
