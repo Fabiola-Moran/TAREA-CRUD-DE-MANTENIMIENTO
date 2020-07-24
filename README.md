@@ -11,29 +11,18 @@ LÓPEZ ROMERO ALAN ARIEL
 IDROVO CAMPOVERDE JHON ALFREDO
 
 # Script Base de datos
-CREATE DATABASE IF NOT EXISTS plancuentas /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
-USE plancuentas;
+CREAR BASE DE DATOS SI NO EXISTE plancuentas/ *! 40100 JUEGO DE CARACTERES POR DEFECTO utf8mb4 * /; USO plancuentas;
 
-CREATE TABLE IF NOT EXISTS grupo (
-  id int(11) NOT NULL AUTO_INCREMENT,
-  descripcion varchar(50) DEFAULT NULL,
-  PRIMARY KEY (id)
-);
+CREAR TABLA SI NO EXISTE grupo( idint (11) NO NULL AUTO_INCREMENT, descripcionvarchar (50) DEFAULT NULL, PRIMARY KEY ( id));
 
-CREATE TABLE IF NOT EXISTS plancuenta (
-  id int(11) NOT NULL AUTO_INCREMENT,
-  codigo varchar(50) DEFAULT NULL,
-  grupo int(11) DEFAULT NULL,
-  descripcion varchar(50) DEFAULT NULL,
-  naturaleza varchar(50) DEFAULT NULL,
-  estado int(11) DEFAULT NULL,
-  PRIMARY KEY (id),
-  KEY grupo (grupo),
-  CONSTRAINT FK_plancuenta_grupo FOREIGN KEY (grupo) REFERENCES grupo (id)
-);
+CREAR TABLA SI NO EXISTE plancuenta( idint (11) NO NULL AUTO_INCREMENT, codigovarchar (50) DEFAULT NULL, grupoint (11) DEFAULT NULL, descripcionvarchar (50) DEFAULT NULL, naturalezavarchar (50) DEFAULT NULL, estadoint (11) DEFAULT NULL, PRIMARY CLAVE ( id), CLAVE grupo( grupo), FK_plancuenta_grupoLLAVE EXTRANJERA RESTRICCIÓN ( grupo) REFERENCIAS grupo( id));
 
-INSERT INTO Grupo (descripcion) VALUES('Cta Corriente'); 
-INSERT INTO Grupo (descripcion) VALUES('Cta Ahorros'); 
-INSERT INTO PlanCuenta(codigo,grupo,descripcion,naturaleza,estado) VALUES ('1',1,'Cuenta familiar','D',TRUE);
-INSERT INTO PlanCuenta(codigo,grupo,descripcion,naturaleza,estado) VALUES ('2',1,'Cuenta empresarial','D',TRUE); 
-INSERT INTO PlanCuenta(codigo,grupo,descripcion,naturaleza,estado) VALUES ('3',2,'Cuenta','A',TRUE);
+INSERTAR EN LOS VALORES DEL GRUPO (descripcion) ('Cta Corriente');
+
+INSERTAR EN LOS VALORES DEL GRUPO (descripcion) ('Cta Ahorros');
+
+INSERTAR EN PlanCuenta (codigo, grupo, descripcion, naturaleza, estado) VALORES ('1', 1, 'Cuenta familiar', 'D', VERDADERO);
+
+INSERTAR EN PLANCuenta (codigo, grupo, descripcion, naturaleza, estado) VALUES ('2', 1, 'Cuenta empresarial', 'D', TRUE);
+
+INSERTAR EN PlanCuenta (codigo, grupo, descripcion, naturaleza, estado) VALORES ('3', 2, 'Cuenta', 'A', VERDADERO);
