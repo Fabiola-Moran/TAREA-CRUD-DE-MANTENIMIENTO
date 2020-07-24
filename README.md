@@ -1,6 +1,8 @@
 # TAREA-CRUD-DE-MANTENIMIENTO
+
 Ejercicio en python con conexion a base de datos MySQL 
 Integrantes:
+
 MORÁN NUGRA FABIOLA YOMIRA
 LÓPEZ ROMERO ALAN ARIEL
 IDROVO CAMPOVERDE JHON ALFREDO
