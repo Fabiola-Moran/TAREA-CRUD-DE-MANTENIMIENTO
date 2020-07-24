@@ -13,6 +13,7 @@ IDROVO CAMPOVERDE JHON ALFREDO
 # Script Base de datos
 CREATE DATABASE IF NOT EXISTS plancuentas /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 USE plancuentas;
+
 CREATE TABLE IF NOT EXISTS grupo (
   id int(11) NOT NULL AUTO_INCREMENT,
   descripcion varchar(50) DEFAULT NULL,
